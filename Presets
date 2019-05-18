@@ -1,2 +1,51 @@
 //This code file only includes the snippets of the coded light changing presets, not the LED pinouts
 
+//Preset 1: Full Light
+  void Full(color1, color2, color3) {
+  setColor(color1, color2, color3);
+  digitalWrite(LED_BUILTIN, HIGH);   
+  delay(1000);
+
+//Preset 2: Blink Light
+
+void Blink(color1, color2, color3) {
+  setColor(color1, color2, color3);
+  digitalWrite(LED_BUILTIN, HIGH);   
+  delay(1000);                       
+  digitalWrite(LED_BUILTIN, LOW);    
+  delay(1000);                       
+}
+
+//Preset 3: Rotate Light
+  void Rotate() {
+  setColor(255, 0, 0);  // red
+  digitalWrite(LED_BUILTIN, HIGH);   
+  delay(1000);                       
+  digitalWrite(LED_BUILTIN, LOW);   
+  delay(1000);
+  setColor(0, 255, 0);  // green
+  digitalWrite(LED_BUILTIN, HIGH);   
+  delay(1000);                       
+  digitalWrite(LED_BUILTIN, LOW);  
+  delay(1000);
+  setColor(0, 0, 255);  // blue
+  digitalWrite(LED_BUILTIN, HIGH);   
+  delay(1000);                       
+  digitalWrite(LED_BUILTIN, LOW);  
+  delay(1000);
+  setColor(255, 255, 0);  // yellow
+  digitalWrite(LED_BUILTIN, HIGH);   
+  delay(1000);                       
+  digitalWrite(LED_BUILTIN, LOW);  
+  delay(1000);  
+  setColor(80, 0, 80);  // purple
+  digitalWrite(LED_BUILTIN, HIGH);   
+  delay(1000);                       
+  digitalWrite(LED_BUILTIN, LOW);  
+  delay(1000);
+  setColor(0, 255, 255);  // aqua
+  digitalWrite(LED_BUILTIN, HIGH);   
+  delay(1000);                       
+  digitalWrite(LED_BUILTIN, LOW);  
+  delay(1000);
+}
